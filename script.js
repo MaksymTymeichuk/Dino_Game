@@ -1,16 +1,6 @@
 var audio = new Audio('JWDTheme.mp3');
     audio.play();
 
-var card = document.getElementById("card")
-card.addEventListener("click",()=>{
-card.style.width = "0px";
-card.style.fontSize="0px";
-setTimeout(function(){
-    card.style.width = "190px";
-    
-}, 1500);
-
-})
 
 
 var dino = document.getElementById("dino_img1"),
