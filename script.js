@@ -1,5 +1,4 @@
-var audio = new Audio('JWDTheme.mp3');
-    audio.play();
+
 
 
 
