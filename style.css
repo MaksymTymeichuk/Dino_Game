@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
 .main_frame{
     display:flex;
     background: #C8FFF4;
@@ -13,36 +14,50 @@ body{
 }
 a{
     text-decoration:none;
-    color:white;
+    color: rgb(76,223,207);
 }
 .function_block{
 display:flex;
 justify-content:center;
 font-size:40px;
-color:white;
+color: rgb(76,223,207);
 align-self:end;
-background: #000;
-width: 304px;
+background:  rgb(37,50,61);
+width: 300px;
+box-shadow: inset 50px 50px 60px  rgb(31,35,44);
+margin-left:3px;
 height: 99px;
+border-radius:10px;
 font-family: 'Mouse Memoirs', sans-serif;
 transition:all 1s;
-border-radius:10px;
+
 }
 .function_block:hover {
-    width: 350px;
-    height: 145px;
-    color: yellow;
+    box-shadow:none;
+    color:rgb(21,27,31);
+    background: rgb(226,241,86);
     cursor:pointer;
 }
 .function_block:hover a{
-    color: yellow;
+    
+    color:rgb(21,27,31);
+
 }
+
 .title{
     left: 100px;
     top: 100px;
     font-size: 100px;
     position:absolute;
     font-family: 'Montserrat Subrayada', sans-serif;
+    text-shadow:  20px 10px 1px lightblue;
+    color: darkblue;
+    background: gray;
+    border-left:solid 10px rgb(76, 0, 139);
+    border-radius: 0px 10px 10px 0px;
+    height: 130px;
+    margin-left:-50px;
+    width: 700px;
 }
 .dino_frame{
     display:flex;
@@ -114,7 +129,6 @@ border-radius:10px;
     display:flex;
     justify-content:center;
     align-items:center;
-    
     flex-wrap:wrap;
     gap:10px 30px;
     width: 1200px;
@@ -122,6 +136,7 @@ border-radius:10px;
     
 }
 .card{
+    position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -129,25 +144,38 @@ border-radius:10px;
     height: 240px;
     background:#008080;
     border-radius:10px;
-    box-shadow:2px 2px 10px black;
+    box-shadow:2px 2px 10px black,inset 50px 50px 100px rgb(0,128,190);
     border: 10px ridge gold;
-    color:yellow;
+    color:yellow; 
+    border-color:gold;
     font-size:50px;
     text-shadow: -2px -2px 2px gold;
     font-family: 'Merienda One', 'cursive';
     cursor:pointer;
     transition:1s all;
+    
 }
 .card:hover{
     margin-right:20px;
     margin-bottom:20px;
     margin-left:-20px;
     margin-top:-20px;
-    box-shadow:20px 20px 20px black;
+    box-shadow:20px 20px 20px black,inset 10px 10px 50px white;
 
 }
 .img{
     width: 0px;
     height: 240px;
     transition: 1s all;
+}
+
+/*Support page*/
+.support_frame{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #C8FFF4;
+    width: 1520px;
+    height: 750px;
+    box-shadow: inset 100px 100px 100px lightblue;
 }
